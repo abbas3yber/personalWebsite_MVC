@@ -1,5 +1,6 @@
-<?php require "layouts/header.php"; ?>
-<div style="background-color: black; margin:0px auto; height:90px;"></div>
+<?php require "Layouts/Header.php"; ?>
+
+<div style="background-color: black; margin:0px auto; height:120px;"></div>
 <section class="blog-detail pt-100 pb-100">
     <div class="container">
         <div class="row">
@@ -7,7 +8,7 @@
             <div class="col-lg-12 offset-lg-2">
                 <!--Blog Image-->
                 <div class="blog-image pt-10">
-                    <img class="img-responsive" src="/images/blog/<?= $data['image']; ?>" alt="<?= $data['image'] ?>">
+                    <img class="img-responsive" src="/Uploads/images/blog/<?= $data['image']; ?>" alt="<?= $data['image'] ?>">
                 </div>
                 <!--Blog Heading-->
                 <div class="blog-heading">
@@ -50,7 +51,7 @@
                     </ul>
                 </div>
                 <!--Blog Comment Form-->
-                <form id="comment" class="col-md-12 contact-form mb-3" method="POST" action="/blog/<?= $data["id"] ?>">
+                <form id="comment" class="col-md-12 contact-form mb-3" method="POST" action="/Blog/<?= $data["id"] ?>">
                     <h3 class="comment-title">پاسخ دهید</h3>
                     <div class="row">
                         <!--Name-->
@@ -75,4 +76,4 @@
         </div>
     </div>
 </section>
-<?php require "layouts/footer.php"; ?>
+<?php require "Layouts/Footer.php"; ?>

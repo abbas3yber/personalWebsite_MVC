@@ -1,8 +1,8 @@
 <?php
-require "layouts/header.php" ; 
+require "Layouts/Header.php" ; 
 ?>
 <!-- Theme Header Start -->
-<header id="home" class="full-height bg-img" data-src="images/bg/main-demo.jpg">
+<header id="home" class="full-height bg-img" data-src="/Uploads/images/bg/main-demo.jpg">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-8 col-sm-offset-2 text-center">
@@ -21,7 +21,7 @@ require "layouts/header.php" ;
 </header>
 <!-- Theme Header End -->
 <!-- About Section -->
-<section id="about" class="section-parallax section-typo-white" data-src="images/bg/3.jpg" data-stellar-background-ratio="0.5">
+<section id="about" class="section-parallax section-typo-white" data-src="/Uploads/images/bg/3.jpg" data-stellar-background-ratio="0.5">
 	<span class="overlay-section-bg primary-section-bg"></span>
 	<div class="container">
 		<div class="row">
@@ -64,14 +64,14 @@ require "layouts/header.php" ;
 				<a class="btn btn-default btn-xl btn-normal margin-top-20" href="#">بیشتر بخوانید</a> <!-- THEME DEFAULT BUTTON WITH NORMAL STYLE -->
 			</div>
 			<div class="col-md-6 hidden-sm hidden-xs media">
-				<img alt="" src="images/about.png" class="img-responsive" />
+				<img alt="" src="/Uploads/images/about.png" class="img-responsive" />
 			</div>
 		</div>
 	</div>
 </section>
 <!-- About Section End-->
 <!-- Support Section Start -->
-<section class="section-parallax" data-src="images/bg/4.jpg" data-stellar-background-ratio="0.5">
+<section class="section-parallax" data-src="/Uploads/images/bg/4.jpg" data-stellar-background-ratio="0.5">
 	<span class="overlay-section-bg black-section-bg"></span>
 	<div class="container section-typo-white">
 		<div class="row">
@@ -139,7 +139,7 @@ require "layouts/header.php" ;
 </section>
 <!-- Service Section End -->
 <!-- Support Section Start -->
-<section class="section-parallax" data-src="images/bg/5.jpg" data-stellar-background-ratio="0.5">
+<section class="section-parallax" data-src="/Uploads/images/bg/5.jpg" data-stellar-background-ratio="0.5">
 	<span class="overlay-section-bg black-section-bg"></span>
 	<div class="container section-typo-white">
 		<div class="row">
@@ -251,7 +251,7 @@ require "layouts/header.php" ;
 </section>
 <!-- Features Section End -->
 <!-- Counter Section Start -->
-<section class="section-parallax padding-bottom-50" data-src="images/bg/3.jpg" data-stellar-background-ratio="0.5">
+<section class="section-parallax padding-bottom-50" data-src="/Uploads/images/bg/3.jpg" data-stellar-background-ratio="0.5">
 	<span class="overlay-section-bg primary-section-bg"></span>
 	<div class="container section-typo-white">
 		<div class="row text-center">
@@ -336,7 +336,7 @@ require "layouts/header.php" ;
 				</div>
 				<div class="grid" data-gutter="20" data-col="3">
 					<div class="portfolio-item element-item digital web-design">
-						<img alt="" src="images/portfolio/1.jpg" class="img-responsive" />
+						<img alt="" src="/Uploads/images/portfolio/1.jpg" class="img-responsive" />
 						<div class="portfolio-content">
 							<div class="portfolio-content-inner">
 								<div class="portfolio-inner">
@@ -348,7 +348,7 @@ require "layouts/header.php" ;
 						</div>
 					</div>
 					<div class="portfolio-item element-item creative web-design">
-						<img alt="" src="images/portfolio/8.gif" class="img-responsive" />
+						<img alt="" src="/Uploads/images/portfolio/8.gif" class="img-responsive" />
 						<div class="portfolio-content">
 							<div class="portfolio-content-inner">
 								<div class="portfolio-inner">
@@ -360,85 +360,85 @@ require "layouts/header.php" ;
 						</div>
 					</div>
 					<div class="portfolio-item element-item digital creative mobile-app">
-						<img alt="" src="images/portfolio/3.jpg" class="img-responsive" />
+						<img alt="" src="/Uploads/images/portfolio/3.jpg" class="img-responsive" />
 						<div class="portfolio-content">
 							<div class="portfolio-content-inner">
 								<div class="portfolio-inner">
 									<h4><a href="#" class="link-white">کد نویسی تمیز</a></h4>
 									<p class="portfolio-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </p>
-									<p class="portfolio-popup"><a class="link-white" href="images/portfolio/3.jpg" data-lightbox="portfolio" data-title="Code Clear"><span class="fa fa-arrows-alt"></span></a></p>
+									<p class="portfolio-popup"><a class="link-white" href="/Uploads/images/portfolio/3.jpg" data-lightbox="portfolio" data-title="Code Clear"><span class="fa fa-arrows-alt"></span></a></p>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="portfolio-item element-item digital mobile-app">
-						<img alt="" src="images/portfolio/10.gif" class="img-responsive" />
+						<img alt="" src="/Uploads/images/portfolio/10.gif" class="img-responsive" />
 						<div class="portfolio-content">
 							<div class="portfolio-content-inner">
 								<div class="portfolio-inner">
 									<h4><a href="#" class="link-white">داشبورد کاربر</a></h4>
 									<p class="portfolio-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </p>
-									<p class="portfolio-popup"><a class="link-white" href="images/portfolio/10.gif" data-lightbox="portfolio" data-title="User Dashboard"><span class="fa fa-arrows-alt"></span></a></p>
+									<p class="portfolio-popup"><a class="link-white" href="/Uploads/images/portfolio/10.gif" data-lightbox="portfolio" data-title="User Dashboard"><span class="fa fa-arrows-alt"></span></a></p>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="portfolio-item element-item creative web-design">
-						<img alt="" src="images/portfolio/5.jpg" class="img-responsive" />
+						<img alt="" src="/Uploads/images/portfolio/5.jpg" class="img-responsive" />
 						<div class="portfolio-content">
 							<div class="portfolio-content-inner">
 								<div class="portfolio-inner">
 									<h4><a href="#" class="link-white">وکتور</a></h4>
 									<p class="portfolio-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </p>
-									<p class="portfolio-popup"><a class="link-white" href="images/portfolio/5.jpg" data-lightbox="portfolio" data-title="Vector Mask"><span class="fa fa-arrows-alt"></span></a></p>
+									<p class="portfolio-popup"><a class="link-white" href="/Uploads/images/portfolio/5.jpg" data-lightbox="portfolio" data-title="Vector Mask"><span class="fa fa-arrows-alt"></span></a></p>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="portfolio-item element-item digital creative">
-						<img alt="" src="images/portfolio/9.gif" class="img-responsive" />
+						<img alt="" src="/Uploads/images/portfolio/9.gif" class="img-responsive" />
 						<div class="portfolio-content">
 							<div class="portfolio-content-inner">
 								<div class="portfolio-inner">
 									<h4><a href="#" class="link-white">ترافیک را بشکنید</a></h4>
 									<p class="portfolio-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </p>
-									<p class="portfolio-popup"><a class="link-white" href="images/portfolio/9.gif" data-lightbox="portfolio" data-title="Break Traffic"><span class="fa fa-arrows-alt"></span></a></p>
+									<p class="portfolio-popup"><a class="link-white" href="/Uploads/images/portfolio/9.gif" data-lightbox="portfolio" data-title="Break Traffic"><span class="fa fa-arrows-alt"></span></a></p>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="portfolio-item element-item web-design mobile-app">
-						<img alt="" src="images/portfolio/7.jpg" class="img-responsive" />
+						<img alt="" src="/Uploads/images/portfolio/7.jpg" class="img-responsive" />
 						<div class="portfolio-content">
 							<div class="portfolio-content-inner">
 								<div class="portfolio-inner">
 									<h4><a href="#" class="link-white">طراحی ماکت</a></h4>
 									<p class="portfolio-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </p>
-									<p class="portfolio-popup"><a class="link-white" href="images/portfolio/7.jpg" data-lightbox="portfolio" data-title="Mockup Design"><span class="fa fa-arrows-alt"></span></a></p>
+									<p class="portfolio-popup"><a class="link-white" href="/Uploads/images/portfolio/7.jpg" data-lightbox="portfolio" data-title="Mockup Design"><span class="fa fa-arrows-alt"></span></a></p>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="portfolio-item element-item creative mobile-app">
-						<img alt="" src="images/portfolio/4.jpg" class="img-responsive" />
+						<img alt="" src="/Uploads/images/portfolio/4.jpg" class="img-responsive" />
 						<div class="portfolio-content">
 							<div class="portfolio-content-inner">
 								<div class="portfolio-inner">
 									<h4><a href="#" class="link-white">سرپرستی تیم</a></h4>
 									<p class="portfolio-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </p>
-									<p class="portfolio-popup"><a class="link-white" href="images/portfolio/4.jpg" data-lightbox="portfolio" data-title="Team Lead"><span class="fa fa-arrows-alt"></span></a></p>
+									<p class="portfolio-popup"><a class="link-white" href="/Uploads/images/portfolio/4.jpg" data-lightbox="portfolio" data-title="Team Lead"><span class="fa fa-arrows-alt"></span></a></p>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="portfolio-item element-item digital web-design">
-						<img alt="" src="images/portfolio/6.jpg" class="img-responsive" />
+						<img alt="" src="/Uploads/images/portfolio/6.jpg" class="img-responsive" />
 						<div class="portfolio-content">
 							<div class="portfolio-content-inner">
 								<div class="portfolio-inner">
 									<h4><a href="#" class="link-white">عکاسی</a></h4>
 									<p class="portfolio-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </p>
-									<p class="portfolio-popup"><a class="link-white" href="images/portfolio/6.jpg" data-lightbox="portfolio" data-title="Phototgraphy"><span class="fa fa-arrows-alt"></span></a></p>
+									<p class="portfolio-popup"><a class="link-white" href="/Uploads/images/portfolio/6.jpg" data-lightbox="portfolio" data-title="Phototgraphy"><span class="fa fa-arrows-alt"></span></a></p>
 								</div>
 							</div>
 						</div>
@@ -450,7 +450,7 @@ require "layouts/header.php" ;
 </section>
 <!-- Our Works Section End -->
 <!-- Support Section Start -->
-<section class="section-parallax" data-src="images/bg/2.jpg" data-stellar-background-ratio="0.5">
+<section class="section-parallax" data-src="/Uploads/images/bg/2.jpg" data-stellar-background-ratio="0.5">
 	<span class="overlay-section-bg black-section-bg"></span>
 	<div class="container section-typo-white">
 		<div class="row">
@@ -546,7 +546,7 @@ require "layouts/header.php" ;
 </section>
 <!-- Our Plans Section End -->
 <!-- Support Section Start -->
-<section class="section-parallax" data-src="images/bg/6.jpg" data-stellar-background-ratio="0.5">
+<section class="section-parallax" data-src="/Uploads/images/bg/6.jpg" data-stellar-background-ratio="0.5">
 	<span class="overlay-section-bg primary-section-bg"></span>
 	<div class="container section-typo-white">
 		<div class="row">
@@ -577,7 +577,7 @@ require "layouts/header.php" ;
 			<div class="col-md-3 col-sm-6">
 				<div class="team-wrap text-center">
 					<div class="team-image">
-						<img alt="" src="images/team/1.jpg" title="Jack" class="img-responsive" />
+						<img alt="" src="/Uploads/images/team/1.jpg" title="Jack" class="img-responsive" />
 					</div>
 					<div class="team-title">
 						<h3>نام کارمند</h3>
@@ -599,7 +599,7 @@ require "layouts/header.php" ;
 			<div class="col-md-3 col-sm-6">
 				<div class="team-wrap text-center">
 					<div class="team-image">
-						<img alt="" src="images/team/2.jpg" title="Jack" class="img-responsive" />
+						<img alt="" src="/Uploads/images/team/2.jpg" title="Jack" class="img-responsive" />
 					</div>
 					<div class="team-title">
 						<h3>نام کارمند</h3>
@@ -621,7 +621,7 @@ require "layouts/header.php" ;
 			<div class="col-md-3 col-sm-6">
 				<div class="team-wrap text-center">
 					<div class="team-image">
-						<img alt="" src="images/team/3.jpg" title="Jack" class="img-responsive" />
+						<img alt="" src="/Uploads/images/team/3.jpg" title="Jack" class="img-responsive" />
 					</div>
 					<div class="team-title">
 						<h3>نام کارمند</h3>
@@ -643,7 +643,7 @@ require "layouts/header.php" ;
 			<div class="col-md-3 col-sm-6">
 				<div class="team-wrap text-center">
 					<div class="team-image">
-						<img alt="" src="images/team/4.jpg" title="Jack" class="img-responsive" />
+						<img alt="" src="/Uploads/images/team/4.jpg" title="Jack" class="img-responsive" />
 					</div>
 					<div class="team-title">
 						<h3>نام کارمند</h3>
@@ -667,7 +667,7 @@ require "layouts/header.php" ;
 </section>
 <!-- Team Section End -->
 <!-- Testimonial Section Start -->
-<section class="section-parallax section-typo-white" data-src="images/bg/1.jpg" data-stellar-background-ratio="0.5">
+<section class="section-parallax section-typo-white" data-src="/Uploads/images/bg/1.jpg" data-stellar-background-ratio="0.5">
 	<span class="overlay-section-bg black-section-bg"></span>
 	<div class="container section-typo-white">
 		<div class="row">
@@ -677,7 +677,7 @@ require "layouts/header.php" ;
 						<div class="testimonial-item">
 							<div class="testimonial-title">
 								<div class="testimonial-image img-thumbnail">
-									<img alt="" src="images/testimonial/1.jpg" class="img-responsive" title="Testimonial" />
+									<img alt="" src="/Uploads/images/testimonial/1.jpg" class="img-responsive" title="Testimonial" />
 								</div>
 								<h4>نام مشتری</h4>
 								<span>سمت مشتری</span>
@@ -689,7 +689,7 @@ require "layouts/header.php" ;
 						<div class="testimonial-item">
 							<div class="testimonial-title">
 								<div class="testimonial-image img-thumbnail">
-									<img alt="" src="images/testimonial/2.jpg" class="img-responsive" title="Testimonial" />
+									<img alt="" src="/Uploads/images/testimonial/2.jpg" class="img-responsive" title="Testimonial" />
 								</div>
 								<h4>نام مشتری</h4>
 								<span>سمت مشتری</span>
@@ -722,12 +722,12 @@ require "layouts/header.php" ;
 		<div class="row margin-bottom-0">
 			<?php
 
-			foreach ($lastBlogs as $item ) {
+			foreach ($lastBlogs as $item) {
 			?>
 				<div class="col-md-4">
 					<div class="blog-wrap">
 						<div class="blog-image">
-							<img alt="" src="/images/blog/<?= $item["image"] ?>" title="Jack" class="img-responsive" />
+							<img alt="" src="/Uploads/images/blog/<?= $item["image"] ?>" title="Jack" class="img-responsive" />
 						</div>
 						<div class="blog-data">
 							<div class="blog-meta">
@@ -755,7 +755,7 @@ require "layouts/header.php" ;
 </section>
 <!-- Blog Section End -->
 <!-- Subsribe Section Start -->
-<section class="section-parallax" data-src="images/bg/7.jpg" data-stellar-background-ratio="0.5">
+<section class="section-parallax" data-src="/Uploads/images/bg/7.jpg" data-stellar-background-ratio="0.5">
 	<span class="overlay-section-bg black-section-bg"></span>
 	<div class="container section-typo-white">
 		<div class="row">
@@ -882,25 +882,25 @@ require "layouts/header.php" ;
 				<div class="client-slider-wrap">
 					<div class="owl-carousel client-slider" data-items="5" data-loop="true" data-margin="30" data-nav="false" data-slideby="1" data-dots="false" data-smart-speed="1000" data-left-arrow="fa fa-angle-left" data-right-arrow="fa fa-angle-right">
 						<div class="client-item">
-							<a href="#"><img alt="" class="img-responsive" src="images/clients/1.png" /></a>
+							<a href="#"><img alt="" class="img-responsive" src="/Uploads/images/clients/1.png" /></a>
 						</div>
 						<div class="client-item">
-							<a href="#"><img alt="" class="img-responsive" src="images/clients/2.png" /></a>
+							<a href="#"><img alt="" class="img-responsive" src="/Uploads/images/clients/2.png" /></a>
 						</div>
 						<div class="client-item">
-							<a href="#"><img alt="" class="img-responsive" src="images/clients/3.png" /></a>
+							<a href="#"><img alt="" class="img-responsive" src="/Uploads/images/clients/3.png" /></a>
 						</div>
 						<div class="client-item">
-							<a href="#"><img alt="" class="img-responsive" src="images/clients/4.png" /></a>
+							<a href="#"><img alt="" class="img-responsive" src="/Uploads/images/clients/4.png" /></a>
 						</div>
 						<div class="client-item">
-							<a href="#"><img alt="" class="img-responsive" src="images/clients/5.png" /></a>
+							<a href="#"><img alt="" class="img-responsive" src="/Uploads/images/clients/5.png" /></a>
 						</div>
 						<div class="client-item">
-							<a href="#"><img alt="" class="img-responsive" src="images/clients/6.png" /></a>
+							<a href="#"><img alt="" class="img-responsive" src="/Uploads/images/clients/6.png" /></a>
 						</div>
 						<div class="client-item">
-							<a href="#"><img alt="" class="img-responsive" src="images/clients/7.png" /></a>
+							<a href="#"><img alt="" class="img-responsive" src="/Uploads/images/clients/7.png" /></a>
 						</div>
 					</div>
 				</div>
@@ -910,5 +910,5 @@ require "layouts/header.php" ;
 </section>
 <!-- Our Clients Section End -->
  <?php
-require "layouts/footer.php" ; 
+require "Layouts/Footer.php" ; 
 ?>

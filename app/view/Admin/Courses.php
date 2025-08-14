@@ -6,7 +6,7 @@ require "Layouts/DashboradHeader.php";
     <div class="header d-flex item-center bg-white width-100 border-bottom padding-12-30">
         <div class="header__right d-flex flex-grow-1 item-center">
             <span class="bars"></span>
-            <a class="header__logo" href="https://netcopy.ir"></a>
+            <a class="header__logo" href="/admin"></a>
         </div>
         <div class="header__left d-flex flex-end item-center margin-top-2">
             <div class="notification margin-15">
@@ -23,14 +23,14 @@ require "Layouts/DashboradHeader.php";
     <div class="breadcrumb">
         <ul>
             <li><a href="/admin/dashboard" title="پیشخوان">پیشخوان</a></li>
-            <li><a href="#" title=" دوره ها" class="is-active"> دوره ها</a></li>
+            <li><a href="/admin/courses" title=" دوره ها" class="is-active"> دوره ها</a></li>
         </ul>
     </div>
     <div class="main-content">
         <div class="tab__box">
             <div class="tab__items">
-                <a class="tab__item is-active" href="/admin/dahsboard/Courses">لیست دوره ها</a>
-                <a class="tab__item" href="/admin/dashboard/NewCourse">ایجاد دوره جدید</a>
+                <a class="tab__item is-active" href="/admin/courses">لیست دوره ها</a>
+                <a class="tab__item" href="/admin/courses/new_course">ایجاد دوره جدید</a>
             </div>
         </div>
         <div class="bg-white padding-20">
@@ -72,9 +72,9 @@ require "Layouts/DashboradHeader.php";
                             <td> <?= $item["price"] ?> تومان </td>
                             <td> <?= $item["status"] ?> </td>
                             <td>
-                                <a href="/admin/dashboard/Courses/<?= $item["id"] ?>" class="item-delete mlg-15" title="حذف" onclick="return confirm('آیا دوره حذف شود  ؟ ');"> </a>
-                                <a href="/SingleCourse/<?= $item["id"] ?>" target="_blank" class="item-eye mlg-15" title="مشاهده"></a>
-                                <a href="/admin/dashboard/EditCourse/<?= $item["id"] ?>" class="item-edit " title="ویرایش"></a>
+                                <a href="/admin/courses/<?= $item["id"] ?>" class="item-delete mlg-15" title="حذف" onclick="return confirm('آیا دوره حذف شود  ؟ ');"> </a>
+                                <a href="/single_course/<?= $item["id"] ?>" target="_blank" class="item-eye mlg-15" title="مشاهده"></a>
+                                <a href="/admin/courses/edit_course/<?= $item["id"] ?>" class="item-edit " title="ویرایش"></a>
                             </td>
                         </tr>
                     <?php

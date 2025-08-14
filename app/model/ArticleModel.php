@@ -28,15 +28,18 @@ class ArticleModel extends Model
         return $stmt->fetchAll(\PDO::FETCH_ASSOC);
     }
 
-    public static function getLatestArticles($limit = 6)
+    public static function getLatestArticles($limit = 3)
     {
         if (!self::$db) {
             self::connect();
         }
-        $sql = "SELECT * FROM " . static::$table . " ORDER BY id DESC LIMIT :limit";
-        $stmt = self::$db->prepare($sql);
-        $stmt->bindValue(':limit', $limit, \PDO::PARAM_INT);
-        $stmt->execute();
+
+        $limit = (int) $limit; // اطمینان از عددی بودن
+        $sql = "SELECT * FROM " . static::$table . " ORDER BY id DESC LIMIT $limit";
+
+        // استفاده از query به جای prepare
+        $stmt = self::$db->query($sql);
+
         return $stmt->fetchAll(\PDO::FETCH_ASSOC);
     }
 }

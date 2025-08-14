@@ -6,7 +6,7 @@ require "Layouts/DashboradHeader.php";
     <div class="header d-flex item-center bg-white width-100 border-bottom padding-12-30">
         <div class="header__right d-flex flex-grow-1 item-center">
             <span class="bars"></span>
-            <a class="header__logo" href="https://netcopy.ir"></a>
+            <a class="header__logo" href="/admin"></a>
         </div>
         <div class="header__left d-flex flex-end item-center margin-top-2">
             <div class="notification margin-15">
@@ -30,7 +30,7 @@ require "Layouts/DashboradHeader.php";
         <div class="row no-gutters ">
             <div class="col-12 bg-white">
                 <p class="box__title">ویرایش مقاله فعلی </p>
-                <form action="/admin/dashboard/EditBlog/<?= $data['id'] ?>" method="POST" enctype="multipart/form-data" class="padding-30">
+                <form action="/admin/articles/edit_blog/<?= $data['id'] ?>" method="POST" enctype="multipart/form-data" class="padding-30">
                     <input type="text" autocomplete="off" require value="<?= htmlspecialchars($data['title']) ?>" name="title" id="title" placeholder="نام جدید مقاله" class="text">
                     <input type="text" autocomplete="off" require value="<?= htmlspecialchars($data['summary']) ?>" name="summary" id="summary" placeholder="خلاصه جدید  " class="text">
                     <textarea autocomplete="off" require name="content" id="editor" placeholder="  متن جدید " class="textarea"></textarea>
@@ -44,7 +44,7 @@ require "Layouts/DashboradHeader.php";
                     <input type="file" accept=".jpg,.png" autocomplete="off" name="image" id="image" placeholder="تصویر جدید دوره  " class="text">
                     <input type="hidden" name="csrf_token" value="<?= csrf_token() ?>">
                     <button type="submit" name="submit" class="btn btn-netcopy_net"> ویرایش مقاله </button>
-                    <a href="/admin/dashboard/Articles" class="btn btn-danger"> انصراف </a>
+                    <a href="/admin/articles" class="btn btn-danger"> انصراف </a>
                 </form>
             </div>
         </div>

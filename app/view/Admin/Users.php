@@ -6,7 +6,7 @@ require "Layouts/DashboradHeader.php";
     <div class="header d-flex item-center bg-white width-100 border-bottom padding-12-30">
         <div class="header__right d-flex flex-grow-1 item-center">
             <span class="bars"></span>
-            <a class="header__logo" href="https://netcopy.ir"></a>
+            <a class="header__logo" href="/admin"></a>
         </div>
         <div class="header__left d-flex flex-end item-center margin-top-2">
             <div class="notification margin-15">
@@ -29,8 +29,8 @@ require "Layouts/DashboradHeader.php";
     <div class="main-content font-size-13">
         <div class="tab__box">
             <div class="tab__items">
-                <a class="tab__item is-active" href="/admin/dashboard/Users">همه کاربران</a>
-                <a class="tab__item" href="/admin/dashboard/NewUser">ایجاد کاربر جدید</a>
+                <a class="tab__item is-active" href="/admin/users">همه کاربران</a>
+                <a class="tab__item" href="/admin/users/new_user">ایجاد کاربر جدید</a>
             </div>
         </div>
         <div class="d-flex flex-space-between item-center flex-wrap padding-30 border-radius-3 bg-white">
@@ -72,8 +72,8 @@ require "Layouts/DashboradHeader.php";
                             <td> <?= unixtimestamp_to_shamsi($item["last_login"] , "hh-mm-ss | YYYY-MM-dd") ?> </td>
                             <td> <?= $item["last_ip"] ?> </td>
                             <td>
-                                <a href="/admin/dashboard/Users/<?= $item["id"] ?>" class="item-delete mlg-15" title="حذف" onclick="return confirm('آیا دوره حذف شود  ؟ ');" ></a>
-                                <a href="/admin/dashboard/EditUser/<?= $item["id"] ?>" class="item-edit " title="ویرایش"></a>
+                                <a href="/admin/users/<?= $item["id"] ?>" class="item-delete mlg-15" title="حذف" onclick="return confirm('آیا دوره حذف شود  ؟ ');" ></a>
+                                <a href="/admin/users/edit_user/<?= $item["id"] ?>" class="item-edit " title="ویرایش"></a>
                             </td>
                         </tr>
                     <?php

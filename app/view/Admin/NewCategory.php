@@ -6,7 +6,7 @@ require "Layouts/DashboradHeader.php";
     <div class="header d-flex item-center bg-white width-100 border-bottom padding-12-30">
         <div class="header__right d-flex flex-grow-1 item-center">
             <span class="bars"></span>
-            <a class="header__logo" href="https://netcopy.ir"></a>
+            <a class="header__logo" href="/admin"></a>
         </div>
         <div class="header__left d-flex flex-end item-center margin-top-2">
             <div class="notification margin-15">
@@ -30,12 +30,12 @@ require "Layouts/DashboradHeader.php";
         <div class="row no-gutters ">
             <div class="col-12 bg-white">
                   <p class="box__title">ایجاد دسته بندی جدید</p>
-                    <form action="/admin/dashboard/NewCategory" method="POST"  class="padding-30">
+                    <form action="/admin/categories/new_category" method="POST"  class="padding-30">
                       <input type="text" autocomplete="off" require name="name" id="name"  placeholder="نام دسته" class="text">
                       <input type="text" autocomplete="off" require name="slug" id="slug" placeholder=" نامک دسته " class="text">
                       <input type="hidden" name="csrf_token" value="<?= csrf_token() ?>">
                       <button type="submit" name="submit" class="btn btn-netcopy_net">اضافه کردن دسته </button>
-                      <a href="/admin/dashboard/Categories" class="btn btn-danger"> انصراف </a>
+                      <a href="/admin/categories" class="btn btn-danger"> انصراف </a>
                   </form>
             </div>
         </div>

@@ -11,12 +11,12 @@ class UsersController extends Controller
     public function Users()
     {
         $users = UsersModel::select(["id", "name", "email", "time", "last_login", "last_ip"]);
-        view("/admin/Users", compact("users"));
+        view("/Admin/Users", compact("users"));
     }
 
     public function NewUser()
     {
-        view("/admin/NewUser");
+        view("/Admin/NewUser");
     }
 
     public function DeleteUser($id)
@@ -27,11 +27,11 @@ class UsersController extends Controller
         }
         $deleted = UsersModel::delete($id);
         if ($deleted) {
-            redirect("/admin/dashboard/Users");
+            redirect("/admin/users");
             echo "<div class='alert alert-success'> کاربر با موفقیت حذف شد  </div>";
             exit;
         } else {
-            echo "حذف دوره با خطا مواجه شد ";
+            echo "حذف دوره با خطا مواجه شد "; 
         }
     }
 
@@ -42,7 +42,7 @@ class UsersController extends Controller
             echo "دوره‌ای یافت نشد.";
             return;
         }
-        view("/admin/EditUser", compact("data"));
+        view("/Admin/EditUser", compact("data"));
     }
 
     public function UpdateUser($id)
@@ -69,7 +69,7 @@ class UsersController extends Controller
                 $success = UsersModel::update($id, $data);
 
                 if ($success) {
-                    redirect("/admin/dashboard/Users");
+                    redirect("/admin/users");
                     echo "<div class='alert alert-success'> کاربر با موفقیت ویرایش شد  </div>";
                     exit;
                 } else {
@@ -103,7 +103,7 @@ class UsersController extends Controller
                 $success = UsersModel::insert($data);
 
                 if ($success) {
-                    redirect("/admin/dashboard/Users");
+                    redirect("/admin/users");
                     echo "<div class='alert alert-success'> دروه با موفقیت اضافه شد  </div>";
                     exit;
                 } else {

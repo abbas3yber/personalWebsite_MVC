@@ -5,29 +5,29 @@
 	<!-- TITLE-->
 	<title> طراح سیتی | طراحی وبسایت و اپلیکیشن </title>
 	<!-- FAV ICON -->
-	<link rel="shortcut icon" href="/images/favicon.ico" type="text/css" />
+	<link rel="shortcut icon" href="Uploads/images/favicon.ico" type="text/css" />
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content=" وبسایت طراح سیتی | طراحی وبسایت و اپلیکیشن ">
 	<meta name="author" content=" عباس ایرانشاهی">
 	<!-- BOOTSTRAP CSS -->
-	<link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="/Assets/css/bootstrap.min.css" type="text/css" />
 	<!-- FONTAWESOME CSS -->
-	<link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css" />
+	<link rel="stylesheet" href="/Assets/css/font-awesome.min.css" type="text/css" />
 	<!-- OWL CAROUSEL CSS -->
-	<link rel="stylesheet" href="/css/owl.carousel.min.css" type="text/css" />
+	<link rel="stylesheet" href="/Assets/css/owl.carousel.min.css" type="text/css" />
 	<!-- ANIMATE CSS -->
-	<link rel="stylesheet" href="/css/animate.min.css" type="text/css" />
+	<link rel="stylesheet" href="/Assets/css/animate.min.css" type="text/css" />
 	<!-- LIGHTBOX CSS -->
-	<link rel="stylesheet" href="/css/lightbox.min.css" type="text/css" />
+	<link rel="stylesheet" href="/Assets/css/lightbox.min.css" type="text/css" />
 	<!-- YTPLAYER CSS -->
-	<link rel="stylesheet" href="/css/mb.YTPlayer.min.css" type="text/css" />
+	<link rel="stylesheet" href="/Assets/css/mb.YTPlayer.min.css" type="text/css" />
 	<!-- FLATICON CSS -->
-	<link rel="stylesheet" href="/css/flaticon.css" type="text/css" />
+	<link rel="stylesheet" href="/Assets/css/flaticon.css" type="text/css" />
 	<!-- BOOTSTRAP VALIDATOR CSS -->
-	<link rel="stylesheet" href="/css/validator.min.css" type="text/css" />
+	<link rel="stylesheet" href="/Assets/css/validator.min.css" type="text/css" />
 	<!-- THEME STYLE CSS -->
-	<link rel="stylesheet" href="/css/style.css" type="text/css" />
+	<link rel="stylesheet" href="/Assets/css/style.css" type="text/css" />
 	<!-- Latest IE rendering engine & Chrome Frame Meta Tags -->
 
 
@@ -54,8 +54,8 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand primary-logo" href="/"><img class="img-responsive " src="/images/light_logo.png" alt="Logo" /></a>
-					<a class="navbar-brand sticky-logo" href="/"><img class="img-responsive " src="/images/tclogo.png" alt="Logo" /></a>
+					<a class="navbar-brand primary-logo" href="/"><img class="img-responsive " src="Uploads/images/light_logo.png" alt="Logo" /></a>
+					<a class="navbar-brand sticky-logo" href="/"><img class="img-responsive " src="Uploads/images/tclogo-01.png" alt="Logo" /></a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">

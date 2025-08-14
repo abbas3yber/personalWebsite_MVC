@@ -26,29 +26,29 @@
 
 
 	<!-- JQUERY LIBRARY -->
-	<script src="/js/jquery.min.js"></script>
+	<script src="/Assets/js/jquery.min.js"></script>
 	<!-- BOOTSTRAP JS -->
-	<script src="/js/bootstrap.min.js"></script>
+	<script src="/Assets/js/bootstrap.min.js"></script>
 	<!-- OWL CAROUSEL JS -->
-	<script src="/js/owl.carousel.min.js"></script>
+	<script src="/Assets/js/owl.carousel.min.js"></script>
 	<!-- APPEARS JS -->
-	<script src="/js/jquery.appear.js"></script>
+	<script src="/Assets/js/jquery.appear.js"></script>
 	<!-- EASING JS -->
-	<script src="/js/jquery.easing.min.js"></script>
+	<script src="/Assets/js/jquery.easing.min.js"></script>
 	<!-- STELLAR JS -->
-	<script src="/js/jquery.stellar.min.js"></script>
+	<script src="/Assets/js/jquery.stellar.min.js"></script>
 	<!-- COUNTER JS -->
-	<script src="/js/jquery.counterup.min.js"></script>
+	<script src="/Assets/js/jquery.counterup.min.js"></script>
 	<!-- ISOTOPE JS -->
-	<script src="/js/isotope.pkgd.min.js"></script>
+	<script src="/Assets/js/isotope.pkgd.min.js"></script>
 	<!-- LIGHTBOX JS -->
-	<script src="/js/lightbox.min.js"></script>
+	<script src="/Assets/js/lightbox.min.js"></script>
 	<!-- YTPLAYER JS -->
-	<script src="/js/jquery.mb.YTPlayer.min.js"></script>
+	<script src="/Assets/js/jquery.mb.YTPlayer.min.js"></script>
 	<!-- BOOTSTRAP VALIDATOR JS -->
-	<script src="/js/validator.min.js"></script>
+	<script src="/Assets/js/validator.min.js"></script>
 	<!-- THEME JS -->
-	<script src="/js/theme.js"></script>
+	<script src="/Assets/js/theme.js"></script>
 	<!-- GOOGLE MAP INIT JS -->
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtkY02zM_XV3XtSzJbNwJdiA2iuNmP_bI&callback=initStarkContact" type="text/javascript"></script>
 </body>

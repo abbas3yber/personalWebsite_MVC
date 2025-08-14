@@ -12,7 +12,7 @@ class CoursesController extends Controller
     public function Courses()
     {
         $Courses = CoursesModel::select(["id", "title", "teacher", "price", "status"]);
-        view("/admin/Courses", compact("Courses"));
+        view("/Admin/Courses", compact("Courses"));
     }
 
     public function NewCourse()
@@ -38,7 +38,7 @@ class CoursesController extends Controller
             echo "دوره‌ای یافت نشد.";
             return;
         }
-        view("/admin/EditCourse", compact("course"));
+        view("/Admin/EditCourse", compact("course"));
     }
 
     public function UpdateCourse($id)
@@ -78,8 +78,8 @@ class CoursesController extends Controller
                     }
 
                     $filename = time() . '.' . $extension;
-                    $uploadPath = __DIR__ . "/../../../public/images/" . $filename;
-                    $relativePath = "images/" . $filename;
+                    $uploadPath = __DIR__ . "/../../../Public/Uploads/images/blog/" . $filename;
+                    $relativePath = "/Uploads/images/blog/" . $filename;
 
                     if (move_uploaded_file($file["tmp_name"], $uploadPath)) {
                         $data["image"] = $relativePath;
@@ -93,7 +93,7 @@ class CoursesController extends Controller
                 if ($updated) {
                     echo " دوره با موفقیت اپدیت شد ! ";
                     var_dump($data);
-                    redirect("/admin/dashboard/Courses");
+                    redirect("/admin/courses");
                     exit;
                 } else {
                     echo "خطا در ویرایش اطلاعات.";
@@ -112,7 +112,7 @@ class CoursesController extends Controller
         }
         $deleted = CoursesModel::delete($id);
         if ($deleted) {
-            redirect("/admin/dashboard/Courses");
+            redirect("/admin/courses");
             echo "<div class='alert alert-success'> دروه با موفقیت حذف شد  </div>";
             exit;
         } else {
@@ -150,8 +150,8 @@ class CoursesController extends Controller
                 }
 
                 $filename = time() . '.' . $extension;
-                $uploadPath = __DIR__ . "/../../../public/images/" . $filename;
-                $relativePath = "images/" . $filename;
+                $uploadPath = __DIR__ . "/../../../Public/Uploads/images/blog/" . $filename;
+                $relativePath = "/Uploads/images/blog/" . $filename;
 
                 if (move_uploaded_file($file["tmp_name"], $uploadPath)) {
                     $data = [
@@ -165,7 +165,7 @@ class CoursesController extends Controller
                     $success = CoursesModel::insert($data);
 
                     if ($success) {
-                        redirect("/admin/dashboard/NewCourse");
+                        redirect("/admin/courses/new_course");
                         echo "<div class='alert alert-success'> دروه با موفقیت اضافه شد  </div>";
                         exit;
                     } else {

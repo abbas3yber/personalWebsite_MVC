@@ -26,25 +26,21 @@ require "Layouts/DashboradHeader.php";
         </ul>
     </div>
     <div class="main-content">
-        <div class="row no-gutters font-size-13 margin-bottom-10">
-            <div class="col-3 padding-20 border-radius-3 bg-white margin-left-10 margin-bottom-10">
-                <p> تعداد مقالات موجود</p>
-                <p> <?= $blogCount ?> </p>
+        <div class="row no-gutters font-size-16 margin-bottom-10">
+            <div class="col-3 d-flex  color-fff padding-20 border-radius-4 bg-primary margin-left-5 margin-bottom-10">
+                <p> <i class="bi bi-file-earmark-richtext-fill icon-big"></i> تعداد مقالات موجود : <?= $blogCount ?> </p>
             </div>
-            <div class="col-3 padding-20 border-radius-3 bg-white margin-left-10 margin-bottom-10">
-                <p> تعداد کاربران موجود  </p>
-                <p>  <?= $usersCount ?>  </p>
+            <div class="col-3 padding-20 color-fff border-radius-4 bg-dark margin-left-5 margin-bottom-10">
+                <p> <i class="bi bi-people-fill icon-big"></i> تعداد کاربران موجود : <?= $usersCount ?> </p>
             </div>
-            <div class="col-3 padding-20 border-radius-3 bg-white margin-left-10 margin-bottom-10">
-                <p> تعداد نظرات کاربران </p>
-                <p>  <?= $feedbackCount ?>  </p>
+            <div class="col-3 padding-20 border-radius-4 bg-warning color-fff margin-left-5 margin-bottom-10">
+                <p> <i class="bi bi-chat-square-heart-fill icon-big"></i> تعداد نظرات کاربران : <?= $feedbackCount ?> </p>
             </div>
-            <div class="col-3 padding-20 border-radius-3 bg-white margin-bottom-10">
-                <p> تعداد دوره ها </p>
-                <p> <?= $courseCount ?> </p>
+            <div class="col-3 padding-20 border-radius-4 bg-success color-fff margin-left-5 margin-bottom-10">
+                <p> <i class="bi bi-play-btn-fill icon-big"></i> تعداد دوره ها : <?= $courseCount ?> </p>
             </div>
         </div>
-        <div class="row no-gutters font-size-13 margin-bottom-10">
+        <div class="row no-gutters font-size-16 margin-bottom-10">
             <div class="col-8 padding-20 bg-white margin-bottom-10 margin-left-10 border-radius-3">
                 محل قرار گیری نمودار
             </div>
@@ -58,7 +54,7 @@ require "Layouts/DashboradHeader.php";
         </div>
         <div class="row bg-white no-gutters font-size-13">
             <div class="title__row">
-                <p> مقالات اخیر شما  </p>
+                <p> مقالات اخیر شما </p>
             </div>
             <div class="table__box">
                 <table width="100%" class="table">
@@ -73,15 +69,15 @@ require "Layouts/DashboradHeader.php";
                     </thead>
                     <tbody>
                         <?php
-                        foreach($blog_info as $item){
+                        foreach ($blog_info as $item) {
                         ?>
-                        <tr role="row">
-                            <td><a href=""> <?=$item["id"]?> </a></td>
-                            <td><a href=""><?=$item["title"]?></a></td>
-                            <td><a href=""><?= unixtimestamp_to_shamsi($item["date"] , "hh-mm-ss | YYYY-MM-dd")  ?></a></td>
-                            <td><a href=""><?=$item["author"]?></a></td>
-                            <td><a href=""> comments </a></td>
-                        </tr>
+                            <tr role="row">
+                                <td><a href=""> <?= $item["id"] ?> </a></td>
+                                <td><a href=""><?= $item["title"] ?></a></td>
+                                <td><a href=""><?= unixtimestamp_to_shamsi($item["date"], "hh-mm-ss | YYYY-MM-dd")  ?></a></td>
+                                <td><a href=""><?= $item["author"] ?></a></td>
+                                <td><a href=""> comments </a></td>
+                            </tr>
                         <?php
                         }
                         ?>

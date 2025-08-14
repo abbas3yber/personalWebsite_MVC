@@ -34,7 +34,7 @@ class ArticleController extends Controller
             return;
         }
         $categories = CategoryModel::select(['id', 'name']);
-        view("admin/EditBlog", compact("data", "categories"));
+        view("Admin/EditBlog", compact("data", "categories"));
     }
 
     public function UpdateBlog($id)
@@ -81,8 +81,7 @@ class ArticleController extends Controller
                     }
 
                     $filename = time() . '.' . $extension;
-                    $uploadPath = __DIR__ . "/../../../public/images/blog/" . $filename;
-                    // $relativePath = "/images/blog/" . $filename;
+                    $uploadPath = __DIR__ . "/../../../Public/Uploads/images/blog/" . $filename;
 
                     if (move_uploaded_file($file["tmp_name"], $uploadPath)) {
                         $data["image"] = $filename;
@@ -95,7 +94,7 @@ class ArticleController extends Controller
                 $updated = ArticleModel::update($id, $data);
                 if ($updated) {
                     echo " دوره با موفقیت اپدیت شد ! ";
-                    redirect("/admin/dashboard/Articles");
+                    redirect("/admin/Articles");
                     exit;
                 } else {
                     echo "خطا در ویرایش اطلاعات.";
@@ -114,7 +113,7 @@ class ArticleController extends Controller
         }
         $deleted = ArticleModel::delete($id);
         if ($deleted) {
-            redirect("/admin/dashboard/Articles");
+            redirect("/admin/articles");
             echo "<div class='alert alert-success'> دروه با موفقیت حذف شد  </div>";
             exit;
         } else {
@@ -156,7 +155,7 @@ class ArticleController extends Controller
                 }
 
                 $filename = time() . '.' . $extension;
-                $uploadPath = __DIR__ . "/../../../public/images/blog/" . $filename;
+                $uploadPath = __DIR__ . "/../../../Public/Uploads/images/blog/" . $filename;
 
                 if (move_uploaded_file($file["tmp_name"], $uploadPath)) {
                     $data = [
@@ -172,7 +171,7 @@ class ArticleController extends Controller
                     $success = ArticleModel::insert($data);
 
                     if ($success) {
-                        redirect("/admin/dashboard/Articles");
+                        redirect("/admin/articles");
                         echo "<div class='alert alert-success'> دروه با موفقیت اضافه شد  </div>";
                         exit;
                     } else {

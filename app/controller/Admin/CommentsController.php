@@ -10,7 +10,7 @@ class CommentsController extends Controller {
 
     public function Comments() {
         $feedback = FeedbackModel::select(["id", "name", "email" , "message" , "ip" , "time" , "status"]);
-        view("/admin/Comments" , compact("feedback"));
+        view("/Admin/Comments" , compact("feedback"));
     }
 
     public function DeleteFeedback($id)
@@ -21,7 +21,7 @@ class CommentsController extends Controller {
         }
         $deleted = CommentsModel::delete($id);
         if ($deleted) {
-            redirect("/admin/dashboard/Commnets");
+            redirect("/admin/commnets");
             echo "<div class='alert alert-success'> کاربر با موفقیت حذف شد  </div>";
             exit;
         } else {

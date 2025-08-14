@@ -1,5 +1,5 @@
 <?php
-require "layouts/header.php";
+require "Layouts/Header.php";
 ?>
 
 <div style="background-color: black; margin:0px auto; height:65px;">
@@ -12,7 +12,7 @@ require "layouts/header.php";
             <div class="col-lg-8 offset-lg-2">
                 <!--Blog Image-->
                 <div class="blog-image">
-                    <img class="img-responsive" src="/images/blog/<?= $data["image"] ?>" alt="">
+                    <img class="img-responsive" src="<?= $data["image"] ?>" alt="<?= $data["image"] ?>">
                 </div>
                 <!--Blog Heading-->
                 <div class="blog-heading">
@@ -33,7 +33,7 @@ require "layouts/header.php";
                     <h3 class="comment-title">نظرات</h3>
                     <ul class="post-comment">
                         <li>
-                            <img class="img-responsive" src="/images/testimonial/<?= $data["image"] ?>" alt="">
+                            <img class="img-responsive" src="/Uploads/images/testimonial/<?= $data["image"] ?>" alt="">
                             <div class="comment-info">
                                 <h3>آدام همتی</h3>
                                 <a href="#">پاسخ</a>
@@ -70,5 +70,5 @@ require "layouts/header.php";
 </section>
 
 <?php
-require "layouts/footer.php";
+require "Layouts/Footer.php";
 ?>

@@ -9,9 +9,9 @@
     <title>صفحه ورود </title>
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="/assets/css/all.min.css" />
-    <link rel="stylesheet" type="text/css" href="/assets/css/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/css/stylesheet.css" />
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i' type='text/css'>
 
     <!-- Colors Css -->

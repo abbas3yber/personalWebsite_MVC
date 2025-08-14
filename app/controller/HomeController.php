@@ -11,16 +11,16 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $blogs = ArticleModel::select();
+        // $blogs = ArticleModel::select();
         $lastBlogs = ArticleModel::getLatestArticles();
-        view("home", compact("blogs" , "lastBlogs"));
+        view("home", compact("lastBlogs"));
     }
 
         public function singleBloge($id)
     {
         $data = ArticleModel::find($id);
         $comments = BlogComment::selectWhere("blog_id", $id);
-        view("blog", compact("data" , "comments"));
+        view("Blog", compact("data" , "comments"));
     }
 
     public function feedback()
@@ -51,7 +51,7 @@ class HomeController extends Controller
                 ];
                 $inserted = BlogComment::insert($data);
                 if ($inserted) {
-                    redirect("/blog/$blog_id");
+                    redirect("/Blog/$blog_id");
                 } else {
                     echo "خطا در ثبت نظر!";
                 }

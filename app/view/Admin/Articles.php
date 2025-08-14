@@ -6,7 +6,7 @@ require "Layouts/DashboradHeader.php";
     <div class="header d-flex item-center bg-white width-100 border-bottom padding-12-30">
         <div class="header__right d-flex flex-grow-1 item-center">
             <span class="bars"></span>
-            <a class="header__logo" href="https://netcopy.ir"></a>
+            <a class="header__logo" href="/admin"></a>
         </div>
         <div class="header__left d-flex flex-end item-center margin-top-2">
             <div class="notification margin-15">
@@ -23,14 +23,14 @@ require "Layouts/DashboradHeader.php";
     <div class="breadcrumb">
         <ul>
             <li><a href="/admin/dashboard">پیشخوان</a></li> 
-            <li><a href="#" class="is-active"> مقالات</a></li>
+            <li><a href="/admin/articles" class="is-active"> مقالات</a></li>
         </ul>
     </div>
     <div class="main-content">
         <div class="tab__box">
             <div class="tab__items">
-                <a class="tab__item is-active" href="/admin/dashboard/Articles">لیست مقالات</a>
-                <a class="tab__item " href="/admin/dashboard/NewArticle">ایجاد مقاله جدید</a>
+                <a class="tab__item is-active" href="/admin/articles">لیست مقالات</a>
+                <a class="tab__item " href="/admin/articles/new_article">ایجاد مقاله جدید</a>
             </div>
         </div>
         <div class="bg-white padding-20">
@@ -73,9 +73,9 @@ require "Layouts/DashboradHeader.php";
                             <td><a href=""> <?= $item["category_name"] ?> </a></td>
                             <td> <?= unixtimestamp_to_shamsi($item["date"] , "hh-mm-ss | YYYY-MM-dd") ?> </td>
                             <td>
-                                <a href="/admin/dashboard/Articles/<?= $item["id"] ?>" class="item-delete mlg-15" title="حذف" onclick="return confirm('آیا مقاله حذف شود  ؟ ');"></a>
+                                <a href="/admin/articles/<?= $item["id"] ?>" class="item-delete mlg-15" title="حذف" onclick="return confirm('آیا مقاله حذف شود  ؟ ');"></a>
                                 <a href="/blog/<?= $item["id"] ?>" target="_blank" class="item-eye mlg-15" title="مشاهده"></a>
-                                <a href="/admin/dashboard/EditBlog/<?= $item["id"] ?>" class="item-edit " title="ویرایش"></a>
+                                <a href="/admin/articles/edit_blog/<?= $item["id"] ?>" class="item-edit " title="ویرایش"></a>
                             </td>
                         </tr>
                     <?php
