@@ -1,5 +1,5 @@
 <?php
-require "Layouts/Header.php" ; 
+require "Layouts/Header.php";
 ?>
 <!-- Theme Header Start -->
 <header id="home" class="full-height bg-img" data-src="/Uploads/images/bg/main-demo.jpg">
@@ -317,7 +317,7 @@ require "Layouts/Header.php" ;
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="section-title">
-					<h2 class="section-title-divider primary-divider">آثار ما را ببینید</h2>
+					<h2 class="section-title-divider primary-divider">دوره های جدید ما </h2>
 					<!-- SECTION TITLE -->
 					<p>
 						لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است ut labore et dolore magna aliqua.
@@ -325,126 +325,36 @@ require "Layouts/Header.php" ;
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<div class="portfolio-button-set margin-bottom-30">
-					<a class="btn btn-default btn-xl btn-normal portfolio filter-active" href="#">همه</a>
-					<a class="btn btn-default btn-xl btn-normal portfolio" data-filter=".digital" href="#">دیجیتال</a>
-					<a class="btn btn-default btn-xl btn-normal portfolio" data-filter=".creative" href="#">خلاق</a>
-					<a class="btn btn-default btn-xl btn-normal portfolio" data-filter=".web-design" href="#">طراحی وب</a>
-					<a class="btn btn-default btn-xl btn-normal portfolio" data-filter=".mobile-app" href="#">اپلیکیشن</a>
-				</div>
-				<div class="grid" data-gutter="20" data-col="3">
-					<div class="portfolio-item element-item digital web-design">
-						<img alt="" src="/Uploads/images/portfolio/1.jpg" class="img-responsive" />
-						<div class="portfolio-content">
-							<div class="portfolio-content-inner">
-								<div class="portfolio-inner">
-									<h4><a href="#" class="link-white">صفحه فرود</a></h4>
-									<p class="portfolio-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </p>
-									<p class="portfolio-popup"><a class="link-white" href="images/portfolio/1.jpg" data-lightbox="portfolio" data-title="Landing Page"><span class="fa fa-arrows-alt"></span></a></p>
-								</div>
-							</div>
+		<div class="row margin-bottom-0">
+			<?php
+			foreach ($courses as $item) {
+			?>
+				<div class="col-md-4">
+					<div class="blog-wrap">
+						<div class="blog-image">
+							<img alt="<?= $item["image"]?>" src="<?= $item["image"] ?>" title="Jack" class="img-responsive" />
 						</div>
-					</div>
-					<div class="portfolio-item element-item creative web-design">
-						<img alt="" src="/Uploads/images/portfolio/8.gif" class="img-responsive" />
-						<div class="portfolio-content">
-							<div class="portfolio-content-inner">
-								<div class="portfolio-inner">
-									<h4><a href="#" class="link-white">طراحی فوق العاده</a></h4>
-									<p class="portfolio-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </p>
-									<p class="portfolio-popup"><a class="link-white" href="images/portfolio/8.gif" data-lightbox="portfolio" data-title="Awesome Design"><span class="fa fa-arrows-alt"></span></a></p>
-								</div>
+						<div class="blog-data">
+							<div class="blog-meta">
+								<ul class="list-inline">
+									<li><a href="#" title="Author" class="author"><?= $item["teacher"] ?></a></li>
+									<li><a href="#" title="Date" class="date"> <?= unixtimestamp_to_shamsi($item["date"], "hh-mm-ss | YYYY-MM-dd") ?> </a></li>
+								</ul>
 							</div>
-						</div>
-					</div>
-					<div class="portfolio-item element-item digital creative mobile-app">
-						<img alt="" src="/Uploads/images/portfolio/3.jpg" class="img-responsive" />
-						<div class="portfolio-content">
-							<div class="portfolio-content-inner">
-								<div class="portfolio-inner">
-									<h4><a href="#" class="link-white">کد نویسی تمیز</a></h4>
-									<p class="portfolio-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </p>
-									<p class="portfolio-popup"><a class="link-white" href="/Uploads/images/portfolio/3.jpg" data-lightbox="portfolio" data-title="Code Clear"><span class="fa fa-arrows-alt"></span></a></p>
-								</div>
+							<div class="blog-title">
+								<h3><a href="/blog/<?= $item["id"] ?>" title="Title Here"><?= $item["title"] ?></a></h3>
 							</div>
-						</div>
-					</div>
-					<div class="portfolio-item element-item digital mobile-app">
-						<img alt="" src="/Uploads/images/portfolio/10.gif" class="img-responsive" />
-						<div class="portfolio-content">
-							<div class="portfolio-content-inner">
-								<div class="portfolio-inner">
-									<h4><a href="#" class="link-white">داشبورد کاربر</a></h4>
-									<p class="portfolio-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </p>
-									<p class="portfolio-popup"><a class="link-white" href="/Uploads/images/portfolio/10.gif" data-lightbox="portfolio" data-title="User Dashboard"><span class="fa fa-arrows-alt"></span></a></p>
-								</div>
+							<div class="blog-content">
+								 <p> <?= $item["category"] ?>  </p> 
+								 <span>  <?= $item["price"] ?> تومان </span>
 							</div>
-						</div>
-					</div>
-					<div class="portfolio-item element-item creative web-design">
-						<img alt="" src="/Uploads/images/portfolio/5.jpg" class="img-responsive" />
-						<div class="portfolio-content">
-							<div class="portfolio-content-inner">
-								<div class="portfolio-inner">
-									<h4><a href="#" class="link-white">وکتور</a></h4>
-									<p class="portfolio-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </p>
-									<p class="portfolio-popup"><a class="link-white" href="/Uploads/images/portfolio/5.jpg" data-lightbox="portfolio" data-title="Vector Mask"><span class="fa fa-arrows-alt"></span></a></p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="portfolio-item element-item digital creative">
-						<img alt="" src="/Uploads/images/portfolio/9.gif" class="img-responsive" />
-						<div class="portfolio-content">
-							<div class="portfolio-content-inner">
-								<div class="portfolio-inner">
-									<h4><a href="#" class="link-white">ترافیک را بشکنید</a></h4>
-									<p class="portfolio-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </p>
-									<p class="portfolio-popup"><a class="link-white" href="/Uploads/images/portfolio/9.gif" data-lightbox="portfolio" data-title="Break Traffic"><span class="fa fa-arrows-alt"></span></a></p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="portfolio-item element-item web-design mobile-app">
-						<img alt="" src="/Uploads/images/portfolio/7.jpg" class="img-responsive" />
-						<div class="portfolio-content">
-							<div class="portfolio-content-inner">
-								<div class="portfolio-inner">
-									<h4><a href="#" class="link-white">طراحی ماکت</a></h4>
-									<p class="portfolio-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </p>
-									<p class="portfolio-popup"><a class="link-white" href="/Uploads/images/portfolio/7.jpg" data-lightbox="portfolio" data-title="Mockup Design"><span class="fa fa-arrows-alt"></span></a></p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="portfolio-item element-item creative mobile-app">
-						<img alt="" src="/Uploads/images/portfolio/4.jpg" class="img-responsive" />
-						<div class="portfolio-content">
-							<div class="portfolio-content-inner">
-								<div class="portfolio-inner">
-									<h4><a href="#" class="link-white">سرپرستی تیم</a></h4>
-									<p class="portfolio-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </p>
-									<p class="portfolio-popup"><a class="link-white" href="/Uploads/images/portfolio/4.jpg" data-lightbox="portfolio" data-title="Team Lead"><span class="fa fa-arrows-alt"></span></a></p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="portfolio-item element-item digital web-design">
-						<img alt="" src="/Uploads/images/portfolio/6.jpg" class="img-responsive" />
-						<div class="portfolio-content">
-							<div class="portfolio-content-inner">
-								<div class="portfolio-inner">
-									<h4><a href="#" class="link-white">عکاسی</a></h4>
-									<p class="portfolio-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </p>
-									<p class="portfolio-popup"><a class="link-white" href="/Uploads/images/portfolio/6.jpg" data-lightbox="portfolio" data-title="Phototgraphy"><span class="fa fa-arrows-alt"></span></a></p>
-								</div>
-							</div>
+							<a class="btn btn-default btn-xl btn-normal margin-top-20" href="/single_course/<?= $item["id"] ?>"> مشاهده دوره </a>
 						</div>
 					</div>
 				</div>
-			</div>
+			<?php
+			}
+			?>
 		</div>
 	</div>
 </section>
@@ -732,8 +642,8 @@ require "Layouts/Header.php" ;
 						<div class="blog-data">
 							<div class="blog-meta">
 								<ul class="list-inline">
-									<li><a href="#" title="Author" class="author"><?= $item["author"] ?></a></li> 
-									<li><a href="#" title="Date" class="date"> <?= unixtimestamp_to_shamsi($item["date"] , "hh-mm-ss | YYYY-MM-dd") ?> </a></li>
+									<li><a href="#" title="Author" class="author"><?= $item["author"] ?></a></li>
+									<li><a href="#" title="Date" class="date"> <?= unixtimestamp_to_shamsi($item["date"], "hh-mm-ss | YYYY-MM-dd") ?> </a></li>
 								</ul>
 							</div>
 							<div class="blog-title">
@@ -823,24 +733,24 @@ require "Layouts/Header.php" ;
 				</div>
 			</div>
 		</div>
-		 <!--contect form here --> 
+		<!--contect form here -->
 		<div class="row text-center">
 			<div class="contact-form">
 				<p id="contact-status-msg" class="hide"></p>
 				<?php
-                    if (isset($_SESSION["success"]) and !empty($_SESSION["success"])) {
-                    ?>
-                       <div class="alert alert-success"><?= $_SESSION["success"] ?></div>
-                   <?php
-                        unset($_SESSION["success"]);
-                    }
-                    if (isset($_SESSION["fail"]) and !empty($_SESSION["fail"])) {
-                    ?>
-                       <div class="alert alert-danger"><?= $_SESSION["fail"] ?></div>
-                   <?php
-                        unset($_SESSION["fail"]);
-                    }
-                    ?>
+				if (isset($_SESSION["success"]) and !empty($_SESSION["success"])) {
+				?>
+					<div class="alert alert-success"><?= $_SESSION["success"] ?></div>
+				<?php
+					unset($_SESSION["success"]);
+				}
+				if (isset($_SESSION["fail"]) and !empty($_SESSION["fail"])) {
+				?>
+					<div class="alert alert-danger"><?= $_SESSION["fail"] ?></div>
+				<?php
+					unset($_SESSION["fail"]);
+				}
+				?>
 				<form class="contact-form" action="/feedback" method="POST">
 					<div class="col-md-4 col-md-offset-2 padding-bottom-20">
 						<div class="form-group">
@@ -909,6 +819,6 @@ require "Layouts/Header.php" ;
 	</div>
 </section>
 <!-- Our Clients Section End -->
- <?php
-require "Layouts/Footer.php" ; 
+<?php
+require "Layouts/Footer.php";
 ?>

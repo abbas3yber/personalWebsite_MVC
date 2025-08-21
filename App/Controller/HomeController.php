@@ -4,6 +4,7 @@ namespace App\controller;
 
 use App\Model\ArticleModel;
 use App\Model\BlogComment;
+use App\Model\CoursesModel;
 use Core\Controller;
 use App\model\FeedbackModel;
 
@@ -11,16 +12,18 @@ class HomeController extends Controller
 {
     public function index()
     {
-        // $blogs = ArticleModel::select();
         $lastBlogs = ArticleModel::getLatestArticles();
-        view("home", compact("lastBlogs"));
+        $courses = CoursesModel::select();
+
+        view("home", compact("lastBlogs", "courses"));
     }
 
-        public function singleBloge($id)
+
+    public function singleBloge($id)
     {
         $data = ArticleModel::find($id);
         $comments = BlogComment::selectWhere("blog_id", $id);
-        view("Blog", compact("data" , "comments"));
+        view("Blog", compact("data", "comments"));
     }
 
     public function feedback()
@@ -60,7 +63,4 @@ class HomeController extends Controller
             }
         }
     }
-
-    
-
 }

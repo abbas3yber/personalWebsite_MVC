@@ -29,17 +29,24 @@ require "Layouts/DashboradHeader.php";
     <div class="main-content padding-0 categories">
         <div class="row no-gutters ">
             <div class="col-12 bg-white">
-                    <p class="box__title">ویرایش دوره فعلی </p>
-                    <form action="/admin/courses/edit_course/<?= $course['id']?>" method="POST" enctype="multipart/form-data" class="padding-30">
-                        <input type="text" autocomplete="off" require value="<?= htmlspecialchars($course['title']) ?>" name="title" id="title" placeholder="نام جدید دوره" class="text">
-                        <input type="text" autocomplete="off" require value="<?= htmlspecialchars($course['teacher']) ?>" name="teacher" id="teacher" placeholder="نام جدید مدرس " class="text">
-                        <input type="text" autocomplete="off" require value="<?= htmlspecialchars($course['price']) ?>" name="price" id="price" placeholder="قیمت جدید دوره " class="text">
-                        <input type="text" autocomplete="off" require value="<?= htmlspecialchars($course['date']) ?>" name="date" id="date" placeholder="تاریخ جدید " class="text">
-                        <input type="file" accept=".jpg,.png" autocomplete="off" name="image" id="image" placeholder="تصویر جدید دوره  " class="text">
-                        <input type="hidden" name="csrf_token" value="<?= csrf_token() ?>">
-                        <button type="submit" name="submit" class="btn btn-netcopy_net"> ویرایش دوره </button>
-                        <a href="/admin/courses" class="btn btn-danger"> انصراف </a>
-                    </form>
+                <p class="box__title">ویرایش دوره فعلی </p>
+                <form action="/admin/courses/edit_course/<?= $course['id'] ?>" method="POST" enctype="multipart/form-data" class="padding-30">
+                    <input type="text" autocomplete="off" require value="<?= htmlspecialchars($course['title']) ?>" name="title" id="title" placeholder="نام جدید دوره" class="text">
+                    <input type="text" autocomplete="off" require value="<?= htmlspecialchars($course['teacher']) ?>" name="teacher" id="teacher" placeholder="نام جدید مدرس " class="text">
+                    <input type="text" autocomplete="off" require value="<?= htmlspecialchars($course['price']) ?>" name="price" id="price" placeholder="قیمت جدید دوره " class="text">
+                    <select name="category" required>
+                        <option value="">انتخاب دسته‌بندی</option>
+                        <option value="programing">برنامه نویسی</option>
+                        <option value="security">امنیت</option>
+                        <option value="web-design">طراحی وب</option>
+                        <option value="wordpress">وردپرس</option>
+                    </select>
+                    <input type="text" autocomplete="off" require value="<?= htmlspecialchars($course['date']) ?>" name="date" id="date" placeholder="تاریخ جدید " class="text">
+                    <input type="file" accept=".jpg,.png" autocomplete="off" name="image" id="image" placeholder="تصویر جدید دوره  " class="text">
+                    <input type="hidden" name="csrf_token" value="<?= csrf_token() ?>">
+                    <button type="submit" name="submit" class="btn btn-netcopy_net"> ویرایش دوره </button>
+                    <a href="/admin/courses" class="btn btn-danger"> انصراف </a>
+                </form>
             </div>
         </div>
     </div>

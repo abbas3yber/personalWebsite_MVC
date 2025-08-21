@@ -54,8 +54,8 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand primary-logo" href="/"><img class="img-responsive " src="Uploads/images/light_logo.png" alt="Logo" /></a>
-					<a class="navbar-brand sticky-logo" href="/"><img class="img-responsive " src="Uploads/images/tclogo-01.png" alt="Logo" /></a>
+					<a class="navbar-brand primary-logo" href="/"><img class="img-responsive " src="/Uploads/images/light_logo.png" alt="Logo" /></a>
+					<a class="navbar-brand sticky-logo" href="/"><img class="img-responsive " src="/Uploads/images/tclogo-01.png" alt="Logo" /></a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
@@ -63,7 +63,7 @@
 						<li class="active"><a href="/#home">خانه</a></li>
 						<li><a href="/#about">درباره ما</a></li>
 						<li><a href="/#service">سرویس ها</a></li>
-						<li><a href="/#portfolio">نمونه کار ها</a></li>
+						<li><a href="/#portfolio"> دوره ها</a></li>
 						<li><a href="/#plans">قیمت ها</a></li>
 						<li><a href="/#blog">وبلاگ</a></li>
 						<li><a href="/#feedback">تماس با ما</a></li>

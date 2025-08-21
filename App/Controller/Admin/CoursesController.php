@@ -11,7 +11,7 @@ class CoursesController extends Controller
 
     public function Courses()
     {
-        $Courses = CoursesModel::select(["id", "title", "teacher", "price", "status"]);
+        $Courses = CoursesModel::select(["id", "title", "teacher", "price", "status", "category"]);
         view("/Admin/Courses", compact("Courses"));
     }
 
@@ -45,20 +45,23 @@ class CoursesController extends Controller
     {
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if (
-                !empty($_POST["title"]) &&  
-                !empty($_POST["teacher"]) && 
-                !empty($_POST["price"]) && 
-                !empty($_POST["date"]) 
+                !empty($_POST["title"]) &&
+                !empty($_POST["teacher"]) &&
+                !empty($_POST["price"]) &&
+                !empty($_POST["category"]) &&
+                !empty($_POST["date"])
             ) {
                 $title = $_POST["title"];
                 $teacher = $_POST["teacher"];
                 $price = $_POST["price"];
+                $category = $_POST["category"];
                 $date = $_POST["date"];
 
                 $data = [
                     "title" => $title,
                     "teacher" => $teacher,
                     "price" => $price,
+                    "category" => $category,
                     "date" => $date
                 ];
 
@@ -78,8 +81,8 @@ class CoursesController extends Controller
                     }
 
                     $filename = time() . '.' . $extension;
-                    $uploadPath = __DIR__ . "/../../../Public/Uploads/images/blog/" . $filename;
-                    $relativePath = "/Uploads/images/blog/" . $filename;
+                    $uploadPath = __DIR__ . "/../../../Public/Uploads/images/course/" . $filename;
+                    $relativePath = "/Uploads/images/course/" . $filename;
 
                     if (move_uploaded_file($file["tmp_name"], $uploadPath)) {
                         $data["image"] = $relativePath;
@@ -128,12 +131,14 @@ class CoursesController extends Controller
                 !empty($_POST["teacher"]) &&
                 !empty($_POST["price"]) &&
                 !empty($_POST["date"]) &&
+                !empty($_POST["category"]) && 
                 !empty($_FILES["image"]["name"])
             ) {
                 $title = $_POST["title"];
                 $teacher = $_POST["teacher"];
                 $price = $_POST["price"];
                 $time = $_POST["date"];
+                $category = $_POST["category"]; 
                 $file = $_FILES["image"];
 
                 $allowed = ["jpg", "png"];
@@ -150,8 +155,8 @@ class CoursesController extends Controller
                 }
 
                 $filename = time() . '.' . $extension;
-                $uploadPath = __DIR__ . "/../../../Public/Uploads/images/blog/" . $filename;
-                $relativePath = "/Uploads/images/blog/" . $filename;
+                $uploadPath = __DIR__ . "/../../../Public/Uploads/images/course/" . $filename;
+                $relativePath = "/Uploads/images/course/" . $filename;
 
                 if (move_uploaded_file($file["tmp_name"], $uploadPath)) {
                     $data = [
@@ -159,14 +164,15 @@ class CoursesController extends Controller
                         "teacher" => $teacher,
                         "price" => $price,
                         "date" => $time,
+                        "category" => $category, 
                         "image" => $relativePath
                     ];
 
                     $success = CoursesModel::insert($data);
 
                     if ($success) {
-                        redirect("/admin/courses/new_course");
-                        echo "<div class='alert alert-success'> دروه با موفقیت اضافه شد  </div>";
+                        redirect("/admin/courses");
+                        echo "<div class='alert alert-success'> دوره با موفقیت اضافه شد </div>";
                         exit;
                     } else {
                         echo "خطا در ثبت اطلاعات.";

@@ -9,31 +9,28 @@ require "Layouts/Header.php";
     <div class="container">
         <div class="row">
             <!--Blog Content-->
-            <div class="col-lg-8 offset-lg-2">
+            <div class="col-lg-12 offset-lg-2">
                 <!--Blog Image-->
-                <div class="blog-image">
+                <div class="blog-image" style="margin-bottom: 50px;">
                     <img class="img-responsive" src="<?= $data["image"] ?>" alt="<?= $data["image"] ?>">
                 </div>
                 <!--Blog Heading-->
                 <div class="blog-heading">
                     <h2><?= $data["title"] ?></h2>
                     <div class="blog-meta">
-                        <span class="date"><?= $data["date"] ?></span>
-                        <span class="by">توسط <?= $data["author"] ?> </span>
+                        <span class="date"> <?= unixtimestamp_to_shamsi($data["date"], "hh-mm-ss | YYYY-MM-dd") ?> </span>
+                        <span class="by"> توسط <?= $data["teacher"] ?> </span>
                     </div>
                 </div>
                 <!--Blog Content-->
-                <div class="blog-content">
-                    <p>
-                        <?= $data["content"] ?>
-                    </p>
+                <div class="bg-primary course-price">
+                    <p class="pt-30"> قیمت دوره: <b> <?= $data["price"] ?> تومان </b> </p>
                 </div>
                 <div class="col-md-12">
                     <!--Blog Comments-->
                     <h3 class="comment-title">نظرات</h3>
                     <ul class="post-comment">
                         <li>
-                            <img class="img-responsive" src="/Uploads/images/testimonial/<?= $data["image"] ?>" alt="">
                             <div class="comment-info">
                                 <h3>آدام همتی</h3>
                                 <a href="#">پاسخ</a>
@@ -49,18 +46,18 @@ require "Layouts/Header.php";
                     <div class="row">
                         <!--Name-->
                         <div class="col-md-6">
-                            <input class="form-inpt" type="text" required="required" placeholder="نام">
+                            <input class="form-control" type="text" required="required" placeholder="نام">
                         </div>
                         <!--Email-->
                         <div class="col-md-6">
-                            <input class="form-inpt" type="text" placeholder="ایمیل" required="required">
+                            <input class="form-control" type="text" placeholder="ایمیل" required="required">
                         </div>
                         <!--Message-->
                         <div class="col-md-12">
-                            <textarea name="form-message" placeholder="نظر شما" rows="8"></textarea>
+                            <textarea class="form-control" name="mesage" placeholder="نظر شما" rows="8"></textarea>
                         </div>
                         <div class="col-md-12 text-center pt-30">
-                            <input id="submit" class="main-btn" type="submit" value="ارسال نظر">
+                            <input id="submit" class="btn btn-default btn-xl btn-normal margin-top-20 contact-btn" type="submit" value="ارسال نظر">
                         </div>
                     </div>
                 </form>

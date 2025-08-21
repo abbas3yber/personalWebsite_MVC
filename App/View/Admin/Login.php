@@ -1,7 +1,7 @@
 <?php
 require "Layouts/Header.php";
 ?>
-<div id="main-wrapper" class="oxyy-login-register">
+<div id="main-wrapper" class="oxyy-login-register login-page">
     <div class="hero-wrap min-vh-100">
         <div class="hero-mask opacity-4 bg-secondary"></div>
         <div class="hero-content d-flex min-vh-100">
@@ -11,7 +11,9 @@ require "Layouts/Header.php";
                         <div class="hero-wrap rounded shadow-lg p-4 py-sm-5 px-sm-5 my-4">
                             <div class="hero-mask opacity-9 bg-dark"></div>
                             <div class="hero-content">
-                                <div class="logo mb-4"> <a class="d-flex justify-content-center" href="/admin" title="login"><h2 class="text-white text-bold">صفحه لاگین</h2></a></div>
+                                <div class="logo mb-4"> <a class="d-flex justify-content-center" href="/admin" title="login">
+                                        <h2 class="text-white text-bold">صفحه لاگین</h2>
+                                    </a></div>
                                 <?php
                                 if (isset($_SESSION["fail"]) and !empty($_SESSION["fail"])) {
                                 ?>
@@ -37,7 +39,10 @@ require "Layouts/Header.php";
                     </div>
                 </div>
             </div>
-            </section>
-            <?php
-            require "Layouts/Footer.php";
-            ?>
+        </div>
+    </div>
+</div>
+
+<?php
+require "Layouts/Footer.php";
+?>

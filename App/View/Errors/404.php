@@ -4,9 +4,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 Error page </title>
-    <link rel="stylesheet" type="text/css" href="Theme/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="Theme/css/error-page.css">
-    <link rel="stylesheet" type="text/css" href="Theme/css/error-page-responsive.css">
+    <link rel="stylesheet" type="text/css" href="/assets/Theme/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/assets/Theme/css/error-page.css">
+    <link rel="stylesheet" type="text/css" href="/assets/Theme/css/error-page-responsive.css">
 </head>
 <body>
         <div class="loader-wrapper" id="loader-wrapper" style="display: none;">
@@ -31,10 +31,10 @@
             </div>
         </div>
     </section>
-    <script src="Theme/js/jquery-3.js"></script>
-    <script src="Theme/js/particles.js"></script>
-    <script src="Theme/js/app.js"></script>
-    <script src="Theme/js/script.js"></script>  
+    <script src="/assets/Theme/js/jquery-3.js"></script>
+    <script src="/assets/Theme/js/particles.js"></script>
+    <script src="/assets/Theme/js/app.js"></script>
+    <script src="/assets/Theme/js/script.js"></script>  
 <noscript><i>Javascript required</i></noscript>
 </body>
 </html>
